@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dataset.css">
+    <link rel="stylesheet" href="../css/preload.css">
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+
+<body onload="checkSession()">
+    <div id="mainpage">
+        <div class="header">
+            <ul>
+                <a style="float: left;" id="site-name" href="./index.html">Conqueror</a>
+                <h2 style="float: right;" id="logout"><a href="../login.html">Logout</a></h2>
+            </ul>
+        </div>
+        <br>
+        <h1>Dataset Creator</h1>
+        <div class="container">
+            <div class="card">
+                <img class="card-img-top" src="../img/dataset-creation.png" alt="Information">
+                <div class="card-body">
+                    <h5 class="card-title">Create Dataset Here</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <input type="text" id="userid" placeholder="User Id">
+                    <input type="text" id="username" placeholder="Name">
+                    <div align="center" onclick="datasettrainjs()"><a class="btn"><span>Save</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loading">
+        <div class="loader">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="wrap-text">
+                <div class="text"><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span><span>...</span>
+                </div>
+            </div>
+        </div>
+        <div class="loader-text">
+            <h2>Please wait...</h2>
+        </div>
+    </div>
+</body>
+
+</html>
